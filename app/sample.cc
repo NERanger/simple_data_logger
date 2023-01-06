@@ -32,5 +32,6 @@ int main(int argc, char const *argv[]){
     DataManager::Instance().Add(std::make_shared<CustomeDataType>(1));
     DataManager::Instance().Add(std::make_shared<CustomeDataType>(2));
     DataManager::Instance().Add(std::make_shared<CustomeDataType>(3));
+    CustomeDataType::CloseStream();
     return EXIT_SUCCESS;
 }
